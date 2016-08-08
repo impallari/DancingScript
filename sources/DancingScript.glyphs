@@ -7,6 +7,10 @@ name = licenseURL;
 value = "http://scripts.sil.org/OFL";
 },
 {
+name = vendorID;
+value = PYRS;
+},
+{
 name = description;
 value = "Copyright (c) 2011 by Pablo Impallari. All rights reserved.";
 },
