@@ -1,6 +1,6 @@
 {
 .appVersion = "911";
-copyright = "Copyright (c) 2011 by Pablo Impallari. www.impallari.com. All rights reserved.";
+copyright = "Copyright (c) 2011, The Dancing Script Project Authors (impallari@gmail.com)";
 customParameters = (
 {
 name = licenseURL;
@@ -16,7 +16,15 @@ value = "Dancing Script is a trademark of Pablo Impallari. www.impallari.com.";
 },
 {
 name = license;
-value = "Copyright (c) 2011, Pablo Impallari (www.impallari.com|impallari@gmail.com),\012with Reserved Font Name Dancing Script.\012This Font Software is licensed under the SIL Open Font License, Version 1.1.\012This license is available with a FAQ at: http://scripts.sil.org/OFL";
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL";
+},
+{
+name = fsType;
+value = 0;
+},
+{
+name = "Use Typo Metrics";
+value = 1;
 }
 );
 date = "2016-08-08 09:47:38 +0000";
