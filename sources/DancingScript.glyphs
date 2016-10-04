@@ -87384,19 +87384,6 @@ width = 428;
 );
 },
 {
-glyphname = .null;
-layers = (
-{
-layerId = UUID0;
-width = 0;
-},
-{
-layerId = "FCB63FBD-5C4C-469B-B6FC-091C423BF597";
-width = 0;
-}
-);
-},
-{
 glyphname = cedi;
 layers = (
 {
@@ -106509,11 +106496,6 @@ width = 0;
 }
 );
 unicode = 0000;
-},
-{
-glyphname = NULL.001;
-layers = (
-);
 }
 );
 instances = (
