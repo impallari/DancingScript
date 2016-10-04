@@ -30,10 +30,19 @@ ChangeLog
 21 Jan 2011 (Pablo Impallari) Dancing Script v1.000
 - Initial release
 
+28 Aug 2016 (Kalapi Gajjar-Bordawekar) Dancing Script v2.000
+- Expanded character-set to Google Plus glyph-set (https://github.com/google/fonts/tree/master/tools/encodings/GF%202016%20Glyph%20Sets)
+- Re-componentized existing accented Latin characters
+
 Acknowledgements
 
 If you make modifications be sure to add your name (N), email (E), web-address
 (if you have one) (W) and description (D). This list is in alphabetical order.
+
+N: Kalapi Gajjar-Bordawekar
+E: k@kalapigajjar.com
+W: http://www.kalapigajjar.com
+D: Character-set extension
 
 N: Igino Marini
 E: mail@iginomarini.com
