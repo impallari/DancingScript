@@ -1,4 +1,4 @@
-Copyright (c) 2016, The Dancing Script Project Authors (impallari@gmail.com),
+Copyright 2016 The Dancing Script Project Authors,
 with Reserved Font Name 'Dancing Script'
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
