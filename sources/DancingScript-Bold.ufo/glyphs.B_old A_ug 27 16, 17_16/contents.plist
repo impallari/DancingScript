@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Oacute</key>
+    <string>O_acute.glif</string>
+    <key>Ocircumflex</key>
+    <string>O_circumflex.glif</string>
+    <key>Ograve</key>
+    <string>O_grave.glif</string>
+    <key>Otilde</key>
+    <string>O_tilde.glif</string>
+  </dict>
+</plist>

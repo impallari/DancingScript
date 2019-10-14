@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ringcomb" format="2">
+  <unicode hex="030A"/>
+  <anchor x="0" y="332" name="_top"/>
+  <anchor x="108" y="507" name="top"/>
+  <outline>
+    <component base="ringcomb.case" xOffset="15" yOffset="25"/>
+  </outline>
+</glyph>

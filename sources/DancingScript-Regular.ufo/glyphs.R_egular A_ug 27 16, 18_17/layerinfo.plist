@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>color</key>
+    <string>0.5,1,0,0.7</string>
+    <key>lib</key>
+    <dict>
+      <key>com.schriftgestaltung.layerId</key>
+      <string>65BA5065-F6D5-4DC6-A3AF-54667EAF2536</string>
+      <key>com.schriftgestaltung.layerOrderInGlyph.oacute</key>
+      <integer>2</integer>
+      <key>com.schriftgestaltung.layerOrderInGlyph.ocircumflex</key>
+      <integer>2</integer>
+      <key>com.schriftgestaltung.layerOrderInGlyph.odieresis</key>
+      <integer>2</integer>
+      <key>com.schriftgestaltung.layerOrderInGlyph.ograve</key>
+      <integer>2</integer>
+      <key>com.schriftgestaltung.layerOrderInGlyph.otilde</key>
+      <integer>2</integer>
+    </dict>
+  </dict>
+</plist>

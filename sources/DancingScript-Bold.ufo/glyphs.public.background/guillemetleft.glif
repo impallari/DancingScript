@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="guillemetleft" format="2">
+  <outline>
+    <contour>
+      <point x="219" y="316" type="curve"/>
+      <point x="177" y="257"/>
+      <point x="95" y="187"/>
+      <point x="42" y="160" type="curve"/>
+      <point x="29" y="158" type="line"/>
+      <point x="39" y="118"/>
+      <point x="140" y="44"/>
+      <point x="188" y="44" type="curve" smooth="yes"/>
+      <point x="201" y="44"/>
+      <point x="211" y="53"/>
+      <point x="217" y="60" type="curve"/>
+      <point x="126" y="95"/>
+      <point x="100" y="114"/>
+      <point x="55" y="147" type="curve"/>
+      <point x="122" y="182"/>
+      <point x="224" y="240"/>
+      <point x="224" y="294" type="curve" smooth="yes"/>
+      <point x="224" y="300"/>
+      <point x="221" y="313"/>
+    </contour>
+    <contour>
+      <point x="369" y="316" type="curve"/>
+      <point x="327" y="257"/>
+      <point x="245" y="187"/>
+      <point x="192" y="160" type="curve"/>
+      <point x="179" y="158" type="line"/>
+      <point x="189" y="118"/>
+      <point x="290" y="44"/>
+      <point x="338" y="44" type="curve" smooth="yes"/>
+      <point x="351" y="44"/>
+      <point x="361" y="53"/>
+      <point x="367" y="60" type="curve"/>
+      <point x="276" y="95"/>
+      <point x="250" y="114"/>
+      <point x="205" y="147" type="curve"/>
+      <point x="272" y="182"/>
+      <point x="374" y="240"/>
+      <point x="374" y="294" type="curve" smooth="yes"/>
+      <point x="374" y="300"/>
+      <point x="371" y="313"/>
+    </contour>
+  </outline>
+</glyph>
