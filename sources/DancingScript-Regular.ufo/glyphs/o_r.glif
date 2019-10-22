@@ -1,8 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="o_r" format="2">
   <advance width="753"/>
-  <anchor x="480" y="-3" name="bottom"/>
-  <anchor x="588" y="404" name="top"/>
   <outline>
     <contour>
       <point x="68" y="-32" type="curve" smooth="yes"/>

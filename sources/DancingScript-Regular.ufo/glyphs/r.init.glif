@@ -1,8 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="r.init" format="2">
   <advance width="417"/>
-  <anchor x="145" y="-3" name="bottom"/>
-  <anchor x="183" y="404" name="top"/>
   <outline>
     <contour>
       <point x="242" y="-26" type="curve" smooth="yes"/>

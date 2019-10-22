@@ -1,8 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="b_r" format="2">
   <advance width="742"/>
-  <anchor x="470" y="-3" name="bottom"/>
-  <anchor x="578" y="404" name="top"/>
   <outline>
     <contour>
       <point x="93" y="-73" type="curve" smooth="yes"/>

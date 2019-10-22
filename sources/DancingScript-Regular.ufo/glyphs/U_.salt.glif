@@ -1,9 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="U.salt" format="2">
   <advance width="734"/>
-  <anchor x="263" y="-64" name="bottom"/>
   <anchor x="352" y="-56" name="ogonek"/>
-  <anchor x="426" y="720" name="top"/>
   <anchor x="652" y="714" name="topright"/>
   <outline>
     <contour>

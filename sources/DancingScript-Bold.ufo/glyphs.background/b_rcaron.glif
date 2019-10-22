@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<glyph name="b_rcaron" format="2">
-  <advance width="500"/>
-  <outline>
-    <component base="b_r"/>
-    <component base="caroncomb" xOffset="600" yOffset="72"/>
-  </outline>
-</glyph>

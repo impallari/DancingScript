@@ -4,8 +4,8 @@
   <unicode hex="2020"/>
   <outline>
     <contour>
-      <point x="96" y="-27" type="line"/>
-      <point x="131" y="30"/>
+      <point x="88" y="-41" type="curve"/>
+      <point x="123" y="16"/>
       <point x="206" y="179"/>
       <point x="266" y="313" type="curve"/>
       <point x="291" y="314"/>
@@ -36,8 +36,7 @@
       <point x="151" y="306"/>
       <point x="181" y="309" type="curve"/>
       <point x="146" y="209"/>
-      <point x="87" y="77"/>
-      <point x="84" y="-23" type="curve"/>
+      <point x="70" y="31"/>
     </contour>
   </outline>
   <lib>

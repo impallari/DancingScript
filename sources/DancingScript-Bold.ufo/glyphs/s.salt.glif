@@ -1,8 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="s.salt" format="2">
   <advance width="311"/>
-  <anchor x="112" y="-30" name="bottom"/>
-  <anchor x="162" y="395" name="top"/>
   <outline>
     <contour>
       <point x="103" y="-51" type="curve" smooth="yes"/>

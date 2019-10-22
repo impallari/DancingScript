@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="b_r" format="2">
-  <advance width="500"/>
+  <advance width="771"/>
   <outline>
     <contour>
       <point x="106" y="-73" type="curve" smooth="yes"/>
@@ -108,8 +108,11 @@
       <point x="181" y="468"/>
       <point x="276" y="613"/>
       <point x="300" y="621" type="curve"/>
-      <point x="300" y="575"/>
-      <point x="223" y="409"/>
+      <point x="300" y="618"/>
+      <point x="300" y="614"/>
+      <point x="299" y="610" type="curve" smooth="yes"/>
+      <point x="290" y="553"/>
+      <point x="217" y="404"/>
     </contour>
   </outline>
 </glyph>

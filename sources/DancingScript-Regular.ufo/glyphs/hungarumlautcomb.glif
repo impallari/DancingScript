@@ -1,8 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="hungarumlautcomb" format="2">
   <unicode hex="030B"/>
-  <anchor x="0" y="332" name="_top"/>
-  <anchor x="0" y="507" name="top"/>
   <outline>
     <component base="hungarumlautcomb.case" yOffset="47"/>
   </outline>

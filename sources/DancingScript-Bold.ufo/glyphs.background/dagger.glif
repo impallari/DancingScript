@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="dagger" format="2">
-  <advance width="500"/>
+  <advance width="405"/>
   <unicode hex="2020"/>
   <outline>
     <contour>
-      <point x="96" y="-27" type="line"/>
-      <point x="131" y="30"/>
+      <point x="88" y="-41" type="line"/>
+      <point x="123" y="16"/>
       <point x="206" y="179"/>
       <point x="266" y="313" type="curve"/>
       <point x="291" y="314"/>

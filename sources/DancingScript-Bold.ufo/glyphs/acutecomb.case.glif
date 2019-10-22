@@ -1,7 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="acutecomb.case" format="2">
-  <anchor x="-1" y="332" name="_top"/>
-  <anchor x="-1" y="508" name="top"/>
   <outline>
     <contour>
       <point x="52" y="360" type="curve"/>

@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<glyph name="Uogonek.salt" format="2">
-  <advance width="500"/>
-  <outline>
-    <component base="U.salt"/>
-    <component base="ogonekcomb.case" xOffset="396" yOffset="-56"/>
-  </outline>
-</glyph>
