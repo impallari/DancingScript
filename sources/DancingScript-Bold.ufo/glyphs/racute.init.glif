@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="racute.init" format="2">
-  <advance width="370"/>
+  <advance width="369"/>
   <outline>
     <component base="r.init"/>
     <component base="acutecomb" xOffset="195" yOffset="72"/>
