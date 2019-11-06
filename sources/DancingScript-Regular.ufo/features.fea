@@ -60,8 +60,8 @@ feature case;
 
 } aalt;
 
+
 feature ccmp {
-# automatic
 lookup ccmp_latn_1 {
 	script latn;
 	@CombiningTopAccents = [acutecomb brevecomb breveinvertedcomb caroncomb circumflexcomb commaturnedabovecomb dblgravecomb dieresiscomb dotaccentcomb gravecomb hookabovecomb hungarumlautcomb macroncomb ringcomb tildecomb];
@@ -70,15 +70,15 @@ lookup ccmp_latn_1 {
 	sub [i j]' @CombiningNonTopAccents @CombiningTopAccents by [idotless jdotless];
 	@Markscomb = [gravecomb acutecomb circumflexcomb tildecomb macroncomb brevecomb dotaccentcomb dieresiscomb hookabovecomb ringcomb hungarumlautcomb caroncomb breveinvertedcomb dblgravecomb horncomb dotbelowcomb dieresisbelowcomb commaaccentcomb cedillacomb ogonekcomb brevebelowcomb macronbelowcomb];
 	@MarkscombCase = [gravecomb.case acutecomb.case circumflexcomb.case tildecomb.case macroncomb.case brevecomb.case dotaccentcomb.case dieresiscomb.case hookabovecomb.case ringcomb.case hungarumlautcomb.case caroncomb.case breveinvertedcomb.case dblgravecomb.case horncomb.case dotbelowcomb.case dieresisbelowcomb.case commaaccentcomb.case cedillacomb.case ogonekcomb.case brevebelowcomb.case macronbelowcomb.case];
-	sub @Markscomb @Markscomb' by @MarkscombCase;
+	#sub @Markscomb @Markscomb' by @MarkscombCase;
 	sub @Uppercase @Markscomb' by @MarkscombCase;
 } ccmp_latn_1;
 
-lookup ccmp_latn_2 {
-	script latn;
-	sub @Markscomb' @MarkscombCase by @MarkscombCase;
-	sub @MarkscombCase @Markscomb' by @MarkscombCase;
-} ccmp_latn_2;
+#lookup ccmp_latn_2 {
+#	script latn;
+#	sub @Markscomb' @MarkscombCase by @MarkscombCase;
+#	sub @MarkscombCase @Markscomb' by @MarkscombCase;
+#} ccmp_latn_2;
 
 lookup ccmp_latn_3 {
 	script latn;
@@ -93,7 +93,10 @@ lookup ccmp_latn_3 {
 	sub circumflexcomb tildecomb by circumflexcomb_tildecomb;
 } ccmp_latn_3;
 
-} ccmp;
+} ccmp ;
+
+
+
 
 feature locl {
 # automatic
