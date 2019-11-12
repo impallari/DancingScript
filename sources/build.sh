@@ -1,5 +1,5 @@
 #!/bin/sh
-#set -e
+set -e
 
 
 echo "Generating Static fonts"
@@ -20,8 +20,6 @@ ttfs=$(ls ../fonts/ttf/*.ttf)
 for ttf in $ttfs
 do
 	gftools fix-dsig -f $ttf;
-	ttfautohint $ttf "$ttf.fix";
-	mv "$ttf.fix" $ttf;
 done
 
 vfs=$(ls ../fonts/vf/*\[wght\].ttf)
@@ -30,8 +28,6 @@ echo "Post processing VFs"
 for vf in $vfs
 do
 	gftools fix-dsig -f $vf;
-	ttfautohint-vf --stem-width-mode nnn $vf "$vf.fix";
-	mv "$vf.fix" $vf;
 done
 
 
@@ -54,11 +50,14 @@ done
 echo "Fixing Hinting"
 for vf in $vfs
 do
-	gftools fix-hinting $vf;
+	gftools fix-nonhinting $vf $vf.fix;
 	mv "$vf.fix" $vf;
 done
 for ttf in $ttfs
 do
-	gftools fix-hinting $ttf;
+	gftools fix-nonhinting $ttf $ttf.fix;
 	mv "$ttf.fix" $ttf;
 done
+
+rm ../fonts/ttf/*gasp.ttf ../fonts/vf/*gasp.ttf
+
