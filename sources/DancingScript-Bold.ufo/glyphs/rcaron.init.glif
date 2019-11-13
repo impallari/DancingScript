@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="rcaron.init" format="2">
-  <advance width="369"/>
+  <advance width="370"/>
   <outline>
     <component base="r.init"/>
     <component base="caroncomb" xOffset="205" yOffset="72"/>

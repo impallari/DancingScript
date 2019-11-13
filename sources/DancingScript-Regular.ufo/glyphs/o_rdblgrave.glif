@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="o_rdblgrave" format="2">
-  <advance width="753"/>
+  <advance width="754"/>
   <outline>
     <component base="o_r"/>
     <component base="dblgravecomb" xOffset="653" yOffset="32"/>
