@@ -3,6 +3,8 @@
   <axes>
     <axis tag="wght" name="Weight" minimum="400" maximum="700" default="400">
       <map input="400" output="0"/>
+      <map input="500" output="33"/>
+      <map input="600" output="66"/>
       <map input="700" output="100"/>
     </axis>
   </axes>
@@ -60,6 +62,90 @@
           <false/>
           <key>com.schriftgestaltung.weight</key>
           <string>Regular</string>
+          <key>com.schriftgestaltung.width</key>
+          <string>Medium (normal)</string>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Dancing Script Medium" familyname="Dancing Script" stylename="Medium" filename="instance_ufos/DancingScript-Medium.ufo">
+      <location>
+        <dimension name="Weight" xvalue="33"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>panose</string>
+              <array>
+                <integer>3</integer>
+                <integer>8</integer>
+                <integer>6</integer>
+                <integer>0</integer>
+                <integer>4</integer>
+                <integer>5</integer>
+                <integer>7</integer>
+                <integer>0</integer>
+                <integer>13</integer>
+                <integer>0</integer>
+              </array>
+            </array>
+          </array>
+          <key>com.schriftgestaltung.export</key>
+          <true/>
+          <key>com.schriftgestaltung.intanceInterpolations</key>
+          <dict>
+            <key>UUID0</key>
+            <integer>1</integer>
+          </dict>
+          <key>com.schriftgestaltung.manualInterpolation</key>
+          <false/>
+          <key>com.schriftgestaltung.weight</key>
+          <string>Medium</string>
+          <key>com.schriftgestaltung.width</key>
+          <string>Medium (normal)</string>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Dancing Script SemiBold" familyname="Dancing Script" stylename="SemiBold" filename="instance_ufos/DancingScript-SemiBold.ufo">
+      <location>
+        <dimension name="Weight" xvalue="66"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>panose</string>
+              <array>
+                <integer>3</integer>
+                <integer>8</integer>
+                <integer>6</integer>
+                <integer>0</integer>
+                <integer>4</integer>
+                <integer>5</integer>
+                <integer>7</integer>
+                <integer>0</integer>
+                <integer>13</integer>
+                <integer>0</integer>
+              </array>
+            </array>
+          </array>
+          <key>com.schriftgestaltung.export</key>
+          <true/>
+          <key>com.schriftgestaltung.intanceInterpolations</key>
+          <dict>
+            <key>UUID0</key>
+            <integer>1</integer>
+          </dict>
+          <key>com.schriftgestaltung.manualInterpolation</key>
+          <false/>
+          <key>com.schriftgestaltung.weight</key>
+          <string>SemiBold</string>
           <key>com.schriftgestaltung.width</key>
           <string>Medium (normal)</string>
         </dict>
