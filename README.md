@@ -34,8 +34,6 @@ Then:
 
 ## License
 
-Copyright (c) 2020, Omnibus-Type (www.omnibus-type.com | omnibus.type@gmail.com)
-
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
 This license is copied below, and is also available with a FAQ at
 http://scripts.sil.org/OFL
