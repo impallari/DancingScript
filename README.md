@@ -1,4 +1,4 @@
-#Dancing Script
+# Dancing Script
 by Pablo Impallari
 
 Dancing Script is a lively casual script where the letters bounce and change size slightly. Caps are big, and goes below the baseline.
@@ -33,8 +33,6 @@ Then:
 * `make proof` will generate HTML proof files.
 
 ## License
-
-Copyright (c) 2020, Omnibus-Type (www.omnibus-type.com | omnibus.type@gmail.com)
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
 This license is copied below, and is also available with a FAQ at
