@@ -34,6 +34,12 @@ ChangeLog
 - Expanded character-set to Google Plus glyph-set (https://github.com/google/fonts/tree/master/tools/encodings/GF%202016%20Glyph%20Sets)
 - Re-componentized existing accented Latin characters
 
+20 Mar 2024 (Pablo Impallari) Dancing Script v3.000
+- Improved /B
+- Improved numbers shapes and kerning
+- Improved various diacrtitics
+- Expanded Charset
+
 Acknowledgements
 
 If you make modifications be sure to add your name (N), email (E), web-address
