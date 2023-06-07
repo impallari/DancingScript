@@ -35,9 +35,8 @@ ChangeLog
 - Re-componentized existing accented Latin characters
 
 20 Mar 2024 (Pablo Impallari) Dancing Script v3.000
-- Improved /B
-- Improved numbers shapes and kerning
-- Improved various diacrtitics
+- Improved /B, numbers and numbers kerning
+- Improved various misplaced diacritics from v.2001
 - Expanded Charset
 
 Acknowledgements
