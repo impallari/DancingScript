@@ -36,7 +36,8 @@ ChangeLog
 
 20 Mar 2024 (Pablo Impallari) Dancing Script v3.000
 - Improved /B, numbers and numbers kerning
-- Improved various misplaced diacritics from v.2001
+- Improved /cedilla /ogonek and related diacritics
+- Improved multiple misaligned diacritics
 - Expanded Charset
 
 Acknowledgements
