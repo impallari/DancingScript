@@ -17,18 +17,18 @@ To contribute to the project contact Pablo Impallari at impallari@gmail.com
 
 ChangeLog
 
-12 May 2011 (Pablo Impallari and Igino Marini) Dancing Script v1.002
-- Added Bold weight
-- Improved Hinting
-- Improved Kerning
+21 Jan 2011 (Pablo Impallari) Dancing Script v1.000
+- Initial release
 
 25 Jan 2011 (Pablo Impallari and Igino Marini) Dancing Script v1.001
 - Spaced and Kerned by iKern
 - New looper lowercase o.
 - Including liga OT feature using r.init for F_r, P_r and T_r
 
-21 Jan 2011 (Pablo Impallari) Dancing Script v1.000
-- Initial release
+12 May 2011 (Pablo Impallari and Igino Marini) Dancing Script v1.002
+- Added Bold weight
+- Improved Hinting
+- Improved Kerning
 
 28 Aug 2016 (Kalapi Gajjar-Bordawekar) Dancing Script v2.000
 - Expanded character-set to Google Plus glyph-set (https://github.com/google/fonts/tree/master/tools/encodings/GF%202016%20Glyph%20Sets)
