@@ -34447,7 +34447,7 @@ unicode = 7691;
 {
 color = 4;
 glyphname = ddotbelow;
-lastChange = "2023-06-02 04:26:07 +0000";
+lastChange = "2023-06-08 03:00:39 +0000";
 layers = (
 {
 layerId = master01;
@@ -34469,6 +34469,7 @@ shapes = (
 ref = d;
 },
 {
+pos = (102,0);
 ref = dotbelowcomb;
 }
 );
