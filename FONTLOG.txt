@@ -38,7 +38,7 @@ ChangeLog
 - Improved /B, numbers and numbers kerning
 - Improved /cedilla /ogonek and related diacritics
 - Improved multiple misaligned diacritics
-- Expanded Charset
+- Expanded Charset from 643 to 967 glyphs
 
 Acknowledgements
 
