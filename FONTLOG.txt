@@ -34,10 +34,10 @@ ChangeLog
 - Expanded character-set to Google Plus glyph-set (https://github.com/google/fonts/tree/master/tools/encodings/GF%202016%20Glyph%20Sets)
 - Re-componentized existing accented Latin characters
 
-20 Mar 2024 (Pablo Impallari) Dancing Script v3.000
+07 Jun 2024 (Pablo Impallari) Dancing Script v2.031
 - Improved /B, numbers and numbers kerning
 - Improved /cedilla /ogonek and related diacritics
-- Improved multiple misaligned diacritics
+- Improved multiple misaligned diacritics from v2.001
 - Expanded Charset from 643 to 967 glyphs
 
 Acknowledgements
