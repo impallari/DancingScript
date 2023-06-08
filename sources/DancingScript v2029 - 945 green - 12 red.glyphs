@@ -337,11 +337,15 @@ pos = (164,-188);
 },
 {
 angle = 72;
-pos = (11,240);
+pos = (-103,240);
 },
 {
 angle = 72;
-pos = (66,202);
+pos = (72,204);
+},
+{
+angle = 72;
+pos = (-16,204);
 }
 );
 id = master01;
@@ -1072,7 +1076,7 @@ pos = (233,897);
 },
 {
 angle = 72;
-pos = (11,240);
+pos = (-96,240);
 },
 {
 pos = (164,-188);
@@ -1082,7 +1086,11 @@ pos = (162,-106);
 },
 {
 angle = 72;
-pos = (66,202);
+pos = (85,204);
+},
+{
+angle = 72;
+pos = (-6,204);
 }
 );
 iconName = Bold;
@@ -31434,17 +31442,35 @@ width = 444;
 unicode = 261;
 },
 {
-color = 1;
+color = 4;
 glyphname = arighthalfring;
-lastChange = "2023-06-02 01:17:36 +0000";
+lastChange = "2023-06-08 00:55:10 +0000";
 layers = (
 {
 layerId = master01;
-width = 600;
+shapes = (
+{
+ref = a;
+},
+{
+pos = (300,0);
+ref = ringhalfright;
+}
+);
+width = 436;
 },
 {
 layerId = master02;
-width = 600;
+shapes = (
+{
+ref = a;
+},
+{
+pos = (400,0);
+ref = ringhalfright;
+}
+);
+width = 444;
 }
 );
 unicode = 7834;
@@ -69446,7 +69472,7 @@ unicode = 8308;
 {
 color = 4;
 glyphname = space;
-lastChange = "2023-06-03 20:17:07 +0000";
+lastChange = "2023-06-08 00:47:16 +0000";
 layers = (
 {
 layerId = master01;
@@ -95300,33 +95326,117 @@ width = 100;
 unicode = 700;
 },
 {
-color = 1;
+color = 4;
 glyphname = ringhalfleft;
-lastChange = "2023-06-02 01:17:36 +0000";
+lastChange = "2023-06-08 00:54:25 +0000";
 layers = (
 {
 layerId = master01;
-width = 300;
+shapes = (
+{
+closed = 1;
+nodes = (
+(90,532,l),
+(18,532,o),
+(-40,468,o),
+(-40,420,cs),
+(-40,390,o),
+(-19,366,o),
+(35,366,c),
+(42,386,l),
+(12,386,o),
+(-1,409,o),
+(-1,427,cs),
+(-1,463,o),
+(39,509,o),
+(82,509,c)
+);
+}
+);
+width = 0;
 },
 {
 layerId = master02;
-width = 300;
+shapes = (
+{
+closed = 1;
+nodes = (
+(56,401,l),
+(30,401,o),
+(18,417,o),
+(17,429,c),
+(17,457,o),
+(51,494,o),
+(88,494,c),
+(99,532,l),
+(22,532,o),
+(-35,469,o),
+(-35,423,cs),
+(-35,391,o),
+(-10,366,o),
+(45,366,c)
+);
+}
+);
+width = 0;
 }
 );
 unicode = 703;
 },
 {
-color = 1;
+color = 4;
 glyphname = ringhalfright;
-lastChange = "2023-06-02 01:17:36 +0000";
+lastChange = "2023-06-08 00:54:25 +0000";
 layers = (
 {
 layerId = master01;
-width = 300;
+shapes = (
+{
+closed = 1;
+nodes = (
+(82,509,l),
+(109,509,o),
+(121,491,o),
+(121,472,cs),
+(121,437,o),
+(81,386,o),
+(42,386,c),
+(35,366,l),
+(101,366,o),
+(158,430,o),
+(158,478,cs),
+(158,508,o),
+(139,532,o),
+(90,532,c)
+);
+}
+);
+width = 0;
 },
 {
 layerId = master02;
-width = 300;
+shapes = (
+{
+closed = 1;
+nodes = (
+(-55,366,l),
+(15,366,o),
+(71,428,o),
+(71,475,cs),
+(71,506,o),
+(50,532,o),
+(-1,532,c),
+(-12,494,l),
+(11,494,o),
+(20,481,o),
+(20,468,cs),
+(20,440,o),
+(-12,401,o),
+(-44,401,c)
+);
+}
+);
+width = 0;
 }
 );
 unicode = 702;
