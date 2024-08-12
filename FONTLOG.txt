@@ -40,6 +40,11 @@ ChangeLog
 - Improved multiple misaligned diacritics from v2.001
 - Expanded Charset from 643 to 967 glyphs
 
+11 Ago 2024 (Pablo Impallari) Dancing Script v3.000
+- Multiple minor improvements
+- Support for AfricanPri glyphset
+- Expanded Charset to 1017 glyphs
+
 Acknowledgements
 
 If you make modifications be sure to add your name (N), email (E), web-address

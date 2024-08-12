@@ -1,5 +1,4 @@
 # Dancing Script
-by Pablo Impallari
 
 Dancing Script is a lively casual script where the letters bounce and change size slightly. Caps are big, and goes below the baseline.
 
@@ -9,11 +8,10 @@ It relates to Murray Hill (Emil Klumpp. 1956) in his weight distribution, and to
 
 Use it when you want a friendly, informal and spontaneous look.
 
-# Version 2.031:
-- Improved /B, numbers and numbers kerning
-- Improved /cedilla /ogonek and related diacritics
-- Improved multiple misaligned diacritics from v2.001
-- Expanded Charset from 643 to 967 glyphs
+# Version 3.000:
+- Multiple minor improvements
+- Support for AfricanPri glyphset
+- Expanded charset to 1017 glyphs
 
 
 ## License
