@@ -1,5 +1,5 @@
 {
-.appVersion = "3318";
+.appVersion = "3319";
 .formatVersion = 3;
 DisplayStrings = (
 "/ring_acutecomb",
@@ -72,7 +72,7 @@ name = "Enforce Compatibility Check";
 value = 1;
 }
 );
-date = "2024-09-19 04:31:26 +0000";
+date = "2024-09-20 17:43:54 +0000";
 familyName = "Dancing Script";
 featurePrefixes = (
 {
