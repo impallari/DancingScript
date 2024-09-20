@@ -8,17 +8,6 @@ D,
 "Ǝ",
 "Ʃ",
 "/UCdiagonalstroke_part Ɇ",
-"/UCdiagonalstroke_part Ɇ",
-"Ʒ",
-"FƑ",
-"Ɠ",
-G,
-"Ɥ",
-I,
-"Ɲ",
-"Ŋ",
-"Ɔ",
-"PƤ",
 "Ʈ",
 "Ʊ",
 "Ɣ",
@@ -57082,6 +57071,37 @@ width = 245;
 }
 );
 unicode = 305;
+},
+{
+glyphname = idotless_dotbelowcomb;
+layers = (
+{
+layerId = master01;
+shapes = (
+{
+ref = idotless;
+},
+{
+pos = (45,0);
+ref = dotbelowcomb;
+}
+);
+width = 242;
+},
+{
+layerId = master02;
+shapes = (
+{
+ref = idotless;
+},
+{
+pos = (16,0);
+ref = dotbelowcomb;
+}
+);
+width = 245;
+}
+);
 },
 {
 glyphname = iacute;
