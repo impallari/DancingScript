@@ -16,7 +16,8 @@ D,
 "/tildecomb.case UƯ/Uhorntilde.salt",
 "/macronbelowcomb.case Ṯ",
 "Ⱡ",
-"ị"
+"ị",
+"Ə"
 );
 axes = (
 {
@@ -89,16 +90,164 @@ name = Prefix;
 features = (
 {
 automatic = 1;
-code = "feature salt;
-feature init;
-feature locl;
+code = "feature locl;
 feature sups;
 feature frac;
 feature ordn;
 feature case;
+feature salt;
+feature init;
 feature calt;
 ";
 tag = aalt;
+},
+{
+automatic = 1;
+code = "lookup ccmp_DFLT_1 {
+	@CombiningTopAccents = [acutecomb brevecomb breveinvertedcomb caroncomb circumflexcomb commaturnedabovecomb dblgravecomb dieresiscomb dotaccentcomb gravecomb hookabovecomb hungarumlautcomb macroncomb ringcomb tildecomb];
+	lookupflag UseMarkFilteringSet @CombiningTopAccents;
+	sub i' @CombiningTopAccents by idotless;
+	sub j' @CombiningTopAccents by jdotless;
+} ccmp_DFLT_1;
+
+lookup ccmp_DFLT_2 {
+	lookupflag 0;
+	sub acutecomb dotaccentcomb by acutecomb_dotaccentcomb;
+	sub acutecomb macroncomb by acutecomb_macroncomb;
+	sub brevecomb acutecomb by brevecomb_acutecomb;
+	sub brevecomb gravecomb by brevecomb_gravecomb;
+	sub brevecomb hookabovecomb by brevecomb_hookabovecomb;
+	sub brevecomb tildecomb by brevecomb_tildecomb;
+	sub caroncomb dotaccentcomb by caroncomb_dotaccentcomb;
+	sub circumflexcomb acutecomb by circumflexcomb_acutecomb;
+	sub circumflexcomb gravecomb by circumflexcomb_gravecomb;
+	sub circumflexcomb hookabovecomb by circumflexcomb_hookabovecomb;
+	sub circumflexcomb tildecomb by circumflexcomb_tildecomb;
+	sub dieresiscomb acutecomb by dieresiscomb_acutecomb;
+	sub dieresiscomb caroncomb by dieresiscomb_caroncomb;
+	sub dieresiscomb gravecomb by dieresiscomb_gravecomb;
+	sub dieresiscomb macroncomb by dieresiscomb_macroncomb;
+	sub dotaccentcomb macroncomb by dotaccentcomb_macroncomb;
+	sub gravecomb macroncomb by gravecomb_macroncomb;
+	sub macroncomb acutecomb by macroncomb_acutecomb;
+	sub macroncomb dieresiscomb by macroncomb_dieresiscomb;
+	sub macroncomb gravecomb by macroncomb_gravecomb;
+	sub ring acutecomb by ring_acutecomb;
+	sub tildecomb acutecomb by tildecomb_acutecomb;
+	sub tildecomb dieresiscomb by tildecomb_dieresiscomb;
+	sub tildecomb macroncomb by tildecomb_macroncomb;
+} ccmp_DFLT_2;
+
+lookup ccmp_Other_1 {
+	lookupflag 0;
+	@Markscomb = [dieresiscomb dieresiscomb_gravecomb dieresiscomb_acutecomb dieresiscomb_caroncomb dieresiscomb_macroncomb dotaccentcomb dotaccentcomb_macroncomb gravecomb gravecomb_macroncomb acutecomb acutecomb_dotaccentcomb acutecomb_macroncomb hungarumlautcomb circumflexcomb circumflexcomb_gravecomb circumflexcomb_acutecomb circumflexcomb_tildecomb circumflexcomb_hookabovecomb caroncomb caroncomb_dotaccentcomb brevecomb brevecomb_gravecomb brevecomb_acutecomb brevecomb_tildecomb brevecomb_hookabovecomb ringcomb tildecomb tildecomb_dieresiscomb tildecomb_acutecomb tildecomb_macroncomb macroncomb macroncomb_dieresiscomb macroncomb_gravecomb macroncomb_acutecomb hookabovecomb dblgravecomb breveinvertedcomb horncomb dotbelowcomb dieresisbelowcomb ringbelowcomb commaaccentcomb cedillacomb ogonekcomb circumflexbelowcomb brevebelowcomb tildebelowcomb macronbelowcomb dieresis dotaccent grave acute hungarumlaut circumflex caron ring ring_acutecomb tilde macron cedilla ogonek dieresis.narrow circumflex.narrow tilde.narrow];
+	@MarkscombCase = [dieresiscomb.case dieresiscomb_gravecomb.case dieresiscomb_acutecomb.case dieresiscomb_caroncomb.case dieresiscomb_macroncomb.case dotaccentcomb.case dotaccentcomb_macroncomb.case gravecomb.case gravecomb_macroncomb.case acutecomb.case acutecomb_dotaccentcomb.case acutecomb_macroncomb.case hungarumlautcomb.case circumflexcomb.case circumflexcomb_gravecomb.case circumflexcomb_acutecomb.case circumflexcomb_tildecomb.case circumflexcomb_hookabovecomb.case caroncomb.case caroncomb_dotaccentcomb.case brevecomb.case brevecomb_gravecomb.case brevecomb_acutecomb.case brevecomb_tildecomb.case brevecomb_hookabovecomb.case ringcomb.case tildecomb.case tildecomb_dieresiscomb.case tildecomb_acutecomb.case tildecomb_macroncomb.case macroncomb.case macroncomb_dieresiscomb.case macroncomb_gravecomb.case macroncomb_acutecomb.case hookabovecomb.case dblgravecomb.case breveinvertedcomb.case horncomb.case dotbelowcomb.case dieresisbelowcomb.case ringbelowcomb.case commaaccentcomb.case cedillacomb.case ogonekcomb.case circumflexbelowcomb.case brevebelowcomb.case tildebelowcomb.case macronbelowcomb.case dieresis.case dotaccent.case grave.case acute.case hungarumlaut.case circumflex.case caron.case ring.case ring_acutecomb.case tilde.case macron.case cedilla.case ogonek.case dieresis.narrow.case circumflex.narrow.case tilde.narrow.case];
+	sub @Markscomb @Markscomb' by @MarkscombCase;
+	sub @Uppercase @Markscomb' by @MarkscombCase;
+} ccmp_Other_1;
+
+lookup ccmp_Other_2 {
+	lookupflag 0;
+	sub @Markscomb' @MarkscombCase by @MarkscombCase;
+	sub @MarkscombCase @Markscomb' by @MarkscombCase;
+} ccmp_Other_2;
+
+lookup ccmp_latn_1 {
+	lookupflag 0;
+	sub itildebelow by i tildebelowcomb;
+} ccmp_latn_1;
+
+lookup ccmp_latn_2 {
+	lookupflag 0;
+	sub fi by f i;
+	sub fl by f l;
+	sub Ldot by L periodcentered.loclCAT.case;
+	sub ldot by l periodcentered.loclCAT;
+	sub napostrophe by apostrophemod n;
+	sub lj by l j;
+	sub Lj by L j;
+	sub LJ by L J;
+	sub nj by n j;
+	sub Nj by N j;
+	sub NJ by N J;
+	sub dzcaron by d zcaron;
+	sub Dzcaron by D zcaron;
+	sub DZcaron by D Zcaron;
+	sub dz by d z;
+	sub Dz by D z;
+	sub DZ by D Z;
+} ccmp_latn_2;
+
+script latn;
+lookup ccmp_latn_1;
+lookup ccmp_latn_2;
+";
+tag = ccmp;
+},
+{
+automatic = 1;
+code = "script latn;
+language AZE;
+lookup locl_latn_0 {
+	sub i by idotaccent;
+} locl_latn_0;
+language CRT;
+lookup locl_latn_0;
+language KAZ;
+lookup locl_latn_0;
+language TAT;
+lookup locl_latn_0;
+language TRK;
+lookup locl_latn_0;
+
+script latn;
+language ROM;
+lookup locl_latn_1 {
+	sub Scedilla by Scommaaccent;
+	sub scedilla by scommaaccent;
+	sub Tcedilla by Tcommaaccent;
+	sub tcedilla by tcommaaccent;
+} locl_latn_1;
+language MOL;
+lookup locl_latn_1;
+
+script latn;
+language MAH;
+lookup locl_latn_2 {
+	sub Lcommaaccent by Lcommaaccent.loclMAH;
+	sub Ncommaaccent by Ncommaaccent.loclMAH;
+	sub lcommaaccent by lcommaaccent.loclMAH;
+	sub ncommaaccent by ncommaaccent.loclMAH;
+} locl_latn_2;
+
+script latn;
+language PLK;
+lookup locl_latn_3 {
+	sub Cacute by Cacute.loclPLK;
+	sub Nacute by Nacute.loclPLK;
+	sub Oacute by Oacute.loclPLK;
+	sub Sacute by Sacute.loclPLK;
+	sub cacute by cacute.loclPLK;
+	sub nacute by nacute.loclPLK;
+	sub oacute by oacute.loclPLK;
+	sub sacute by sacute.loclPLK;
+} locl_latn_3;
+
+script latn;
+language CAT;
+lookup locl_latn_4 {
+	sub l periodcentered' l by periodcentered.loclCAT;
+	sub L periodcentered' L by periodcentered.loclCAT.case;
+} locl_latn_4;
+
+script latn;
+language NLD;
+lookup locl_latn_5 {
+	sub iacute j' by jacute;
+	sub Iacute J' by Jacute;
+} locl_latn_5;
+";
+tag = locl;
 },
 {
 automatic = 1;
@@ -266,154 +415,6 @@ tag = salt;
 {
 code = "sub r by r.init;";
 tag = init;
-},
-{
-automatic = 1;
-code = "lookup ccmp_DFLT_1 {
-	@CombiningTopAccents = [acutecomb brevecomb breveinvertedcomb caroncomb circumflexcomb commaturnedabovecomb dblgravecomb dieresiscomb dotaccentcomb gravecomb hookabovecomb hungarumlautcomb macroncomb ringcomb tildecomb];
-	lookupflag UseMarkFilteringSet @CombiningTopAccents;
-	sub i' @CombiningTopAccents by idotless;
-	sub j' @CombiningTopAccents by jdotless;
-} ccmp_DFLT_1;
-
-lookup ccmp_DFLT_2 {
-	lookupflag 0;
-	sub acutecomb dotaccentcomb by acutecomb_dotaccentcomb;
-	sub acutecomb macroncomb by acutecomb_macroncomb;
-	sub brevecomb acutecomb by brevecomb_acutecomb;
-	sub brevecomb gravecomb by brevecomb_gravecomb;
-	sub brevecomb hookabovecomb by brevecomb_hookabovecomb;
-	sub brevecomb tildecomb by brevecomb_tildecomb;
-	sub caroncomb dotaccentcomb by caroncomb_dotaccentcomb;
-	sub circumflexcomb acutecomb by circumflexcomb_acutecomb;
-	sub circumflexcomb gravecomb by circumflexcomb_gravecomb;
-	sub circumflexcomb hookabovecomb by circumflexcomb_hookabovecomb;
-	sub circumflexcomb tildecomb by circumflexcomb_tildecomb;
-	sub dieresiscomb acutecomb by dieresiscomb_acutecomb;
-	sub dieresiscomb caroncomb by dieresiscomb_caroncomb;
-	sub dieresiscomb gravecomb by dieresiscomb_gravecomb;
-	sub dieresiscomb macroncomb by dieresiscomb_macroncomb;
-	sub dotaccentcomb macroncomb by dotaccentcomb_macroncomb;
-	sub gravecomb macroncomb by gravecomb_macroncomb;
-	sub macroncomb acutecomb by macroncomb_acutecomb;
-	sub macroncomb dieresiscomb by macroncomb_dieresiscomb;
-	sub macroncomb gravecomb by macroncomb_gravecomb;
-	sub ring acutecomb by ring_acutecomb;
-	sub tildecomb acutecomb by tildecomb_acutecomb;
-	sub tildecomb dieresiscomb by tildecomb_dieresiscomb;
-	sub tildecomb macroncomb by tildecomb_macroncomb;
-} ccmp_DFLT_2;
-
-lookup ccmp_Other_1 {
-	lookupflag 0;
-	@Markscomb = [dieresiscomb dieresiscomb_gravecomb dieresiscomb_acutecomb dieresiscomb_caroncomb dieresiscomb_macroncomb dotaccentcomb dotaccentcomb_macroncomb gravecomb gravecomb_macroncomb acutecomb acutecomb_dotaccentcomb acutecomb_macroncomb hungarumlautcomb circumflexcomb circumflexcomb_gravecomb circumflexcomb_acutecomb circumflexcomb_tildecomb circumflexcomb_hookabovecomb caroncomb caroncomb_dotaccentcomb brevecomb brevecomb_gravecomb brevecomb_acutecomb brevecomb_tildecomb brevecomb_hookabovecomb ringcomb tildecomb tildecomb_dieresiscomb tildecomb_acutecomb tildecomb_macroncomb macroncomb macroncomb_dieresiscomb macroncomb_gravecomb macroncomb_acutecomb hookabovecomb dblgravecomb breveinvertedcomb horncomb dotbelowcomb dieresisbelowcomb ringbelowcomb commaaccentcomb cedillacomb ogonekcomb circumflexbelowcomb brevebelowcomb tildebelowcomb macronbelowcomb dieresis dotaccent grave acute hungarumlaut circumflex caron ring ring_acutecomb tilde macron cedilla ogonek dieresis.narrow circumflex.narrow tilde.narrow];
-	@MarkscombCase = [dieresiscomb.case dieresiscomb_gravecomb.case dieresiscomb_acutecomb.case dieresiscomb_caroncomb.case dieresiscomb_macroncomb.case dotaccentcomb.case dotaccentcomb_macroncomb.case gravecomb.case gravecomb_macroncomb.case acutecomb.case acutecomb_dotaccentcomb.case acutecomb_macroncomb.case hungarumlautcomb.case circumflexcomb.case circumflexcomb_gravecomb.case circumflexcomb_acutecomb.case circumflexcomb_tildecomb.case circumflexcomb_hookabovecomb.case caroncomb.case caroncomb_dotaccentcomb.case brevecomb.case brevecomb_gravecomb.case brevecomb_acutecomb.case brevecomb_tildecomb.case brevecomb_hookabovecomb.case ringcomb.case tildecomb.case tildecomb_dieresiscomb.case tildecomb_acutecomb.case tildecomb_macroncomb.case macroncomb.case macroncomb_dieresiscomb.case macroncomb_gravecomb.case macroncomb_acutecomb.case hookabovecomb.case dblgravecomb.case breveinvertedcomb.case horncomb.case dotbelowcomb.case dieresisbelowcomb.case ringbelowcomb.case commaaccentcomb.case cedillacomb.case ogonekcomb.case circumflexbelowcomb.case brevebelowcomb.case tildebelowcomb.case macronbelowcomb.case dieresis.case dotaccent.case grave.case acute.case hungarumlaut.case circumflex.case caron.case ring.case ring_acutecomb.case tilde.case macron.case cedilla.case ogonek.case dieresis.narrow.case circumflex.narrow.case tilde.narrow.case];
-	sub @Markscomb @Markscomb' by @MarkscombCase;
-	sub @Uppercase @Markscomb' by @MarkscombCase;
-} ccmp_Other_1;
-
-lookup ccmp_Other_2 {
-	lookupflag 0;
-	sub @Markscomb' @MarkscombCase by @MarkscombCase;
-	sub @MarkscombCase @Markscomb' by @MarkscombCase;
-} ccmp_Other_2;
-
-lookup ccmp_latn_1 {
-	lookupflag 0;
-	sub itildebelow by i tildebelowcomb;
-} ccmp_latn_1;
-
-lookup ccmp_latn_2 {
-	lookupflag 0;
-	sub fi by f i;
-	sub fl by f l;
-	sub Ldot by L periodcentered.loclCAT.case;
-	sub ldot by l periodcentered.loclCAT;
-	sub napostrophe by apostrophemod n;
-	sub lj by l j;
-	sub Lj by L j;
-	sub LJ by L J;
-	sub nj by n j;
-	sub Nj by N j;
-	sub NJ by N J;
-	sub dzcaron by d zcaron;
-	sub Dzcaron by D zcaron;
-	sub DZcaron by D Zcaron;
-	sub dz by d z;
-	sub Dz by D z;
-	sub DZ by D Z;
-} ccmp_latn_2;
-
-script latn;
-lookup ccmp_latn_1;
-lookup ccmp_latn_2;
-";
-tag = ccmp;
-},
-{
-automatic = 1;
-code = "script latn;
-language AZE;
-lookup locl_latn_0 {
-	sub i by idotaccent;
-} locl_latn_0;
-language CRT;
-lookup locl_latn_0;
-language KAZ;
-lookup locl_latn_0;
-language TAT;
-lookup locl_latn_0;
-language TRK;
-lookup locl_latn_0;
-
-script latn;
-language ROM;
-lookup locl_latn_1 {
-	sub Scedilla by Scommaaccent;
-	sub scedilla by scommaaccent;
-	sub Tcedilla by Tcommaaccent;
-	sub tcedilla by tcommaaccent;
-} locl_latn_1;
-language MOL;
-lookup locl_latn_1;
-
-script latn;
-language MAH;
-lookup locl_latn_2 {
-	sub Lcommaaccent by Lcommaaccent.loclMAH;
-	sub Ncommaaccent by Ncommaaccent.loclMAH;
-	sub lcommaaccent by lcommaaccent.loclMAH;
-	sub ncommaaccent by ncommaaccent.loclMAH;
-} locl_latn_2;
-
-script latn;
-language PLK;
-lookup locl_latn_3 {
-	sub Cacute by Cacute.loclPLK;
-	sub Nacute by Nacute.loclPLK;
-	sub Oacute by Oacute.loclPLK;
-	sub Sacute by Sacute.loclPLK;
-	sub cacute by cacute.loclPLK;
-	sub nacute by nacute.loclPLK;
-	sub oacute by oacute.loclPLK;
-	sub sacute by sacute.loclPLK;
-} locl_latn_3;
-
-script latn;
-language CAT;
-lookup locl_latn_4 {
-	sub l periodcentered' l by periodcentered.loclCAT;
-	sub L periodcentered' L by periodcentered.loclCAT.case;
-} locl_latn_4;
-
-script latn;
-language NLD;
-lookup locl_latn_5 {
-	sub iacute j' by jacute;
-	sub Iacute J' by Jacute;
-} locl_latn_5;
-";
-tag = locl;
 },
 {
 code = "sub b' r' by b_r;
@@ -12964,9 +12965,19 @@ unicode = 7706;
 },
 {
 glyphname = Schwa;
-lastChange = "2024-05-29 00:14:48 +0000";
+lastChange = "2024-09-20 21:09:54 +0000";
 layers = (
 {
+anchors = (
+{
+name = bottom;
+pos = (180,-46);
+},
+{
+name = top;
+pos = (366,715);
+}
+);
 layerId = master01;
 shapes = (
 {
@@ -13052,6 +13063,16 @@ stem = -2;
 width = 593;
 },
 {
+anchors = (
+{
+name = bottom;
+pos = (158,-30);
+},
+{
+name = top;
+pos = (334,715);
+}
+);
 layerId = master02;
 shapes = (
 {
