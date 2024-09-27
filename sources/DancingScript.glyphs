@@ -2,27 +2,8 @@
 .appVersion = "3260";
 .formatVersion = 3;
 DisplayStrings = (
-"/ring_acutecomb",
-D,
-"Ɛ",
-"Ǝ",
-"Ʃ",
-"/UCdiagonalstroke_part Ɇ",
-"Ʈ",
-"Ʊ",
-"Ɣ",
-"Ʋ",
-"AɅ",
-"/tildecomb.case UƯ/Uhorntilde.salt",
-"/macronbelowcomb.case Ṯ",
-"Ⱡ",
-"ị",
-"Ə",
-"Ɩ",
-"ʾ
-ʿ",
-"/IJacute",
-"ʼʽ"
+"H™",
+"/horncomb.case ư"
 );
 axes = (
 {
@@ -65,7 +46,7 @@ name = "Use Typo Metrics";
 value = 1;
 }
 );
-date = "2024-09-20 17:43:54 +0000";
+date = "2024-09-27 14:20:15 +0000";
 familyName = "Dancing Script";
 featurePrefixes = (
 {
@@ -105,13 +86,6 @@ tag = aalt;
 {
 automatic = 1;
 code = "lookup ccmp_DFLT_1 {
-	@CombiningTopAccents = [acutecomb brevecomb breveinvertedcomb caroncomb circumflexcomb commaturnedabovecomb dblgravecomb dieresiscomb dotaccentcomb gravecomb hookabovecomb hungarumlautcomb macroncomb ringcomb tildecomb];
-	lookupflag UseMarkFilteringSet @CombiningTopAccents;
-	sub i' @CombiningTopAccents by idotless;
-	sub j' @CombiningTopAccents by jdotless;
-} ccmp_DFLT_1;
-
-lookup ccmp_DFLT_2 {
 	lookupflag 0;
 	sub acutecomb dotaccentcomb by acutecomb_dotaccentcomb;
 	sub acutecomb macroncomb by acutecomb_macroncomb;
@@ -137,21 +111,28 @@ lookup ccmp_DFLT_2 {
 	sub tildecomb acutecomb by tildecomb_acutecomb;
 	sub tildecomb dieresiscomb by tildecomb_dieresiscomb;
 	sub tildecomb macroncomb by tildecomb_macroncomb;
-} ccmp_DFLT_2;
+} ccmp_DFLT_1;
 
 lookup ccmp_Other_1 {
+	@CombiningTopAccents = [acutecomb brevecomb breveinvertedcomb caroncomb circumflexcomb commaturnedabovecomb dblgravecomb dieresiscomb dotaccentcomb gravecomb hookabovecomb hungarumlautcomb macroncomb ringcomb tildecomb];
+	lookupflag UseMarkFilteringSet @CombiningTopAccents;
+	sub i' @CombiningTopAccents by idotless;
+	sub j' @CombiningTopAccents by jdotless;
+} ccmp_Other_1;
+
+lookup ccmp_Other_2 {
 	lookupflag 0;
 	@Markscomb = [dieresiscomb dieresiscomb_gravecomb dieresiscomb_acutecomb dieresiscomb_caroncomb dieresiscomb_macroncomb dotaccentcomb dotaccentcomb_macroncomb gravecomb gravecomb_macroncomb acutecomb acutecomb_dotaccentcomb acutecomb_macroncomb hungarumlautcomb circumflexcomb circumflexcomb_gravecomb circumflexcomb_acutecomb circumflexcomb_tildecomb circumflexcomb_hookabovecomb caroncomb caroncomb_dotaccentcomb brevecomb brevecomb_gravecomb brevecomb_acutecomb brevecomb_tildecomb brevecomb_hookabovecomb ringcomb tildecomb tildecomb_dieresiscomb tildecomb_acutecomb tildecomb_macroncomb macroncomb macroncomb_dieresiscomb macroncomb_gravecomb macroncomb_acutecomb hookabovecomb dblgravecomb breveinvertedcomb horncomb dotbelowcomb dieresisbelowcomb ringbelowcomb commaaccentcomb cedillacomb ogonekcomb circumflexbelowcomb brevebelowcomb tildebelowcomb macronbelowcomb dieresis dotaccent grave acute hungarumlaut circumflex caron ring ring_acutecomb tilde macron cedilla ogonek dieresis.narrow circumflex.narrow tilde.narrow];
 	@MarkscombCase = [dieresiscomb.case dieresiscomb_gravecomb.case dieresiscomb_acutecomb.case dieresiscomb_caroncomb.case dieresiscomb_macroncomb.case dotaccentcomb.case dotaccentcomb_macroncomb.case gravecomb.case gravecomb_macroncomb.case acutecomb.case acutecomb_dotaccentcomb.case acutecomb_macroncomb.case hungarumlautcomb.case circumflexcomb.case circumflexcomb_gravecomb.case circumflexcomb_acutecomb.case circumflexcomb_tildecomb.case circumflexcomb_hookabovecomb.case caroncomb.case caroncomb_dotaccentcomb.case brevecomb.case brevecomb_gravecomb.case brevecomb_acutecomb.case brevecomb_tildecomb.case brevecomb_hookabovecomb.case ringcomb.case tildecomb.case tildecomb_dieresiscomb.case tildecomb_acutecomb.case tildecomb_macroncomb.case macroncomb.case macroncomb_dieresiscomb.case macroncomb_gravecomb.case macroncomb_acutecomb.case hookabovecomb.case dblgravecomb.case breveinvertedcomb.case horncomb.case dotbelowcomb.case dieresisbelowcomb.case ringbelowcomb.case commaaccentcomb.case cedillacomb.case ogonekcomb.case circumflexbelowcomb.case brevebelowcomb.case tildebelowcomb.case macronbelowcomb.case dieresis.case dotaccent.case grave.case acute.case hungarumlaut.case circumflex.case caron.case ring.case ring_acutecomb.case tilde.case macron.case cedilla.case ogonek.case dieresis.narrow.case circumflex.narrow.case tilde.narrow.case];
 	sub @Markscomb @Markscomb' by @MarkscombCase;
 	sub @Uppercase @Markscomb' by @MarkscombCase;
-} ccmp_Other_1;
+} ccmp_Other_2;
 
-lookup ccmp_Other_2 {
+lookup ccmp_Other_3 {
 	lookupflag 0;
 	sub @Markscomb' @MarkscombCase by @MarkscombCase;
 	sub @MarkscombCase @Markscomb' by @MarkscombCase;
-} ccmp_Other_2;
+} ccmp_Other_3;
 
 lookup ccmp_latn_1 {
 	lookupflag 0;
@@ -95250,42 +95231,6 @@ metricWidth = "=222";
 unicode = 8287;
 },
 {
-glyphname = CR;
-lastChange = "2024-05-29 00:14:48 +0000";
-layers = (
-{
-layerId = master01;
-userData = {
-com.schriftgestaltung.Glyphs.glyph.widthMetricsKey = space;
-};
-width = 260;
-},
-{
-layerId = master02;
-userData = {
-com.schriftgestaltung.Glyphs.glyph.widthMetricsKey = space;
-};
-width = 260;
-}
-);
-unicode = 13;
-},
-{
-glyphname = NULL;
-lastChange = "2024-05-29 00:14:48 +0000";
-layers = (
-{
-layerId = master01;
-width = 0;
-},
-{
-layerId = master02;
-width = 0;
-}
-);
-unicode = 0;
-},
-{
 glyphname = .notdef;
 lastChange = "2024-05-29 00:14:48 +0000";
 layers = (
@@ -125483,7 +125428,7 @@ width = 0;
 },
 {
 glyphname = horncomb.case;
-lastChange = "2024-08-30 20:17:10 +0000";
+lastChange = "2024-09-27 14:34:34 +0000";
 layers = (
 {
 anchors = (
@@ -125497,28 +125442,28 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(154,417,o),
-(196,452,o),
-(196,510,cs),
-(196,564,o),
-(165,581,o),
-(145,581,cs),
-(125,581,o),
-(113,576,o),
-(101,560,c),
-(120,548,o),
-(139,531,o),
-(139,502,cs),
-(139,477,o),
-(128,451,o),
-(87,451,cs),
-(52,451,o),
-(34,478,o),
+(147,426,o),
+(189,461,o),
+(189,519,cs),
+(189,573,o),
+(158,590,o),
+(138,590,cs),
+(118,590,o),
+(106,585,o),
+(94,569,c),
+(113,557,o),
+(132,540,o),
+(132,511,cs),
+(132,486,o),
+(121,460,o),
+(80,460,cs),
+(52,460,o),
+(34,474,o),
 (-10,478,c),
 (-4,458,l),
 (35,458,o),
-(60,415,o),
-(108,416,cs)
+(60,424,o),
+(101,425,cs)
 );
 }
 );
@@ -125536,28 +125481,28 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(161,414,o),
-(200,448,o),
-(200,506,cs),
-(200,560,o),
-(178,581,o),
-(148,581,cs),
-(128,581,o),
-(113,573,o),
-(101,557,c),
-(120,545,o),
-(139,528,o),
-(139,499,cs),
-(139,474,o),
-(128,448,o),
-(87,448,cs),
-(54,448,o),
-(28,480,o),
-(-16,480,c),
-(-4,455,l),
-(35,455,o),
-(60,414,o),
-(108,414,cs)
+(141,433,o),
+(189,460,o),
+(189,518,cs),
+(189,572,o),
+(167,593,o),
+(137,593,cs),
+(117,593,o),
+(102,585,o),
+(90,569,c),
+(109,557,o),
+(128,540,o),
+(128,511,cs),
+(128,486,o),
+(117,460,o),
+(76,460,cs),
+(53,460,o),
+(28,470,o),
+(-5,480,c),
+(-4,458,l),
+(5,456,o),
+(60,433,o),
+(88,433,cs)
 );
 }
 );
