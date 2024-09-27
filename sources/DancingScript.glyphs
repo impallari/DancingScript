@@ -1,26 +1,10 @@
 {
-.appVersion = "3319";
+.appVersion = "3260";
 .formatVersion = 3;
 DisplayStrings = (
-"/ring_acutecomb",
-D,
-"Ɛ",
-"Ǝ",
-"Ʃ",
-"/UCdiagonalstroke_part Ɇ",
-"Ʈ",
-"Ʊ",
-"Ɣ",
-"Ʋ",
-"AɅ",
-"/tildecomb.case UƯ/Uhorntilde.salt",
-"/macronbelowcomb.case Ṯ",
-"Ⱡ",
-"ị",
-"Ə",
-"Ɩ",
-"ʾ
-ʿ"
+"H™",
+"/horncomb.case ư",
+"ơ"
 );
 axes = (
 {
@@ -63,7 +47,7 @@ name = "Use Typo Metrics";
 value = 1;
 }
 );
-date = "2024-09-20 17:43:54 +0000";
+date = "2024-09-27 14:20:15 +0000";
 familyName = "Dancing Script";
 featurePrefixes = (
 {
@@ -103,13 +87,6 @@ tag = aalt;
 {
 automatic = 1;
 code = "lookup ccmp_DFLT_1 {
-	@CombiningTopAccents = [acutecomb brevecomb breveinvertedcomb caroncomb circumflexcomb commaturnedabovecomb dblgravecomb dieresiscomb dotaccentcomb gravecomb hookabovecomb hungarumlautcomb macroncomb ringcomb tildecomb];
-	lookupflag UseMarkFilteringSet @CombiningTopAccents;
-	sub i' @CombiningTopAccents by idotless;
-	sub j' @CombiningTopAccents by jdotless;
-} ccmp_DFLT_1;
-
-lookup ccmp_DFLT_2 {
 	lookupflag 0;
 	sub acutecomb dotaccentcomb by acutecomb_dotaccentcomb;
 	sub acutecomb macroncomb by acutecomb_macroncomb;
@@ -135,21 +112,28 @@ lookup ccmp_DFLT_2 {
 	sub tildecomb acutecomb by tildecomb_acutecomb;
 	sub tildecomb dieresiscomb by tildecomb_dieresiscomb;
 	sub tildecomb macroncomb by tildecomb_macroncomb;
-} ccmp_DFLT_2;
+} ccmp_DFLT_1;
 
 lookup ccmp_Other_1 {
+	@CombiningTopAccents = [acutecomb brevecomb breveinvertedcomb caroncomb circumflexcomb commaturnedabovecomb dblgravecomb dieresiscomb dotaccentcomb gravecomb hookabovecomb hungarumlautcomb macroncomb ringcomb tildecomb];
+	lookupflag UseMarkFilteringSet @CombiningTopAccents;
+	sub i' @CombiningTopAccents by idotless;
+	sub j' @CombiningTopAccents by jdotless;
+} ccmp_Other_1;
+
+lookup ccmp_Other_2 {
 	lookupflag 0;
 	@Markscomb = [dieresiscomb dieresiscomb_gravecomb dieresiscomb_acutecomb dieresiscomb_caroncomb dieresiscomb_macroncomb dotaccentcomb dotaccentcomb_macroncomb gravecomb gravecomb_macroncomb acutecomb acutecomb_dotaccentcomb acutecomb_macroncomb hungarumlautcomb circumflexcomb circumflexcomb_gravecomb circumflexcomb_acutecomb circumflexcomb_tildecomb circumflexcomb_hookabovecomb caroncomb caroncomb_dotaccentcomb brevecomb brevecomb_gravecomb brevecomb_acutecomb brevecomb_tildecomb brevecomb_hookabovecomb ringcomb tildecomb tildecomb_dieresiscomb tildecomb_acutecomb tildecomb_macroncomb macroncomb macroncomb_dieresiscomb macroncomb_gravecomb macroncomb_acutecomb hookabovecomb dblgravecomb breveinvertedcomb horncomb dotbelowcomb dieresisbelowcomb ringbelowcomb commaaccentcomb cedillacomb ogonekcomb circumflexbelowcomb brevebelowcomb tildebelowcomb macronbelowcomb dieresis dotaccent grave acute hungarumlaut circumflex caron ring ring_acutecomb tilde macron cedilla ogonek dieresis.narrow circumflex.narrow tilde.narrow];
 	@MarkscombCase = [dieresiscomb.case dieresiscomb_gravecomb.case dieresiscomb_acutecomb.case dieresiscomb_caroncomb.case dieresiscomb_macroncomb.case dotaccentcomb.case dotaccentcomb_macroncomb.case gravecomb.case gravecomb_macroncomb.case acutecomb.case acutecomb_dotaccentcomb.case acutecomb_macroncomb.case hungarumlautcomb.case circumflexcomb.case circumflexcomb_gravecomb.case circumflexcomb_acutecomb.case circumflexcomb_tildecomb.case circumflexcomb_hookabovecomb.case caroncomb.case caroncomb_dotaccentcomb.case brevecomb.case brevecomb_gravecomb.case brevecomb_acutecomb.case brevecomb_tildecomb.case brevecomb_hookabovecomb.case ringcomb.case tildecomb.case tildecomb_dieresiscomb.case tildecomb_acutecomb.case tildecomb_macroncomb.case macroncomb.case macroncomb_dieresiscomb.case macroncomb_gravecomb.case macroncomb_acutecomb.case hookabovecomb.case dblgravecomb.case breveinvertedcomb.case horncomb.case dotbelowcomb.case dieresisbelowcomb.case ringbelowcomb.case commaaccentcomb.case cedillacomb.case ogonekcomb.case circumflexbelowcomb.case brevebelowcomb.case tildebelowcomb.case macronbelowcomb.case dieresis.case dotaccent.case grave.case acute.case hungarumlaut.case circumflex.case caron.case ring.case ring_acutecomb.case tilde.case macron.case cedilla.case ogonek.case dieresis.narrow.case circumflex.narrow.case tilde.narrow.case];
 	sub @Markscomb @Markscomb' by @MarkscombCase;
 	sub @Uppercase @Markscomb' by @MarkscombCase;
-} ccmp_Other_1;
+} ccmp_Other_2;
 
-lookup ccmp_Other_2 {
+lookup ccmp_Other_3 {
 	lookupflag 0;
 	sub @Markscomb' @MarkscombCase by @MarkscombCase;
 	sub @MarkscombCase @Markscomb' by @MarkscombCase;
-} ccmp_Other_2;
+} ccmp_Other_3;
 
 lookup ccmp_latn_1 {
 	lookupflag 0;
@@ -95248,42 +95232,6 @@ metricWidth = "=222";
 unicode = 8287;
 },
 {
-glyphname = CR;
-lastChange = "2024-05-29 00:14:48 +0000";
-layers = (
-{
-layerId = master01;
-userData = {
-com.schriftgestaltung.Glyphs.glyph.widthMetricsKey = space;
-};
-width = 260;
-},
-{
-layerId = master02;
-userData = {
-com.schriftgestaltung.Glyphs.glyph.widthMetricsKey = space;
-};
-width = 260;
-}
-);
-unicode = 13;
-},
-{
-glyphname = NULL;
-lastChange = "2024-05-29 00:14:48 +0000";
-layers = (
-{
-layerId = master01;
-width = 0;
-},
-{
-layerId = master02;
-width = 0;
-}
-);
-unicode = 0;
-},
-{
 glyphname = .notdef;
 lastChange = "2024-05-29 00:14:48 +0000";
 layers = (
@@ -106040,6 +105988,127 @@ width = 449;
 unicode = 8225;
 },
 {
+glyphname = estimated;
+kernLeft = estimated;
+kernRight = estimated;
+lastChange = "2024-09-27 15:14:03 +0000";
+layers = (
+{
+layerId = master01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(517,0,o),
+(589,35,o),
+(671,126,c),
+(607,126,l),
+(557,69,o),
+(475,25,o),
+(387,25,cs),
+(256,25,o),
+(168,104,o),
+(168,137,cs),
+(168,292,ls),
+(168,307,o),
+(174,308,o),
+(182,308,cs),
+(734,308,l),
+(725,519,o),
+(592,634,o),
+(387,634,cs),
+(184,634,o),
+(40,507,o),
+(40,317,cs),
+(40,124,o),
+(184,0,o),
+(387,0,cs)
+);
+},
+{
+closed = 1;
+nodes = (
+(172,328,o),
+(168,330,o),
+(168,336,cs),
+(168,501,ls),
+(168,529,o),
+(261,612,o),
+(386,612,cs),
+(485,612,o),
+(605,544,o),
+(605,495,cs),
+(605,342,ls),
+(605,331,o),
+(603,328,o),
+(590,328,cs),
+(182,328,ls)
+);
+}
+);
+width = 774;
+},
+{
+layerId = master02;
+shapes = (
+{
+closed = 1;
+nodes = (
+(524,0,o),
+(597,36,o),
+(681,127,c),
+(615,127,l),
+(565,70,o),
+(481,25,o),
+(392,25,cs),
+(259,25,o),
+(171,106,o),
+(171,139,cs),
+(171,296,ls),
+(171,312,o),
+(176,313,o),
+(185,313,cs),
+(744,313,l),
+(735,526,o),
+(600,643,o),
+(392,643,cs),
+(186,643,o),
+(40,514,o),
+(40,321,cs),
+(40,125,o),
+(186,0,o),
+(392,0,cs)
+);
+},
+{
+closed = 1;
+nodes = (
+(174,332,o),
+(171,335,o),
+(171,341,cs),
+(171,508,ls),
+(171,536,o),
+(265,621,o),
+(391,621,cs),
+(492,621,o),
+(613,552,o),
+(613,502,cs),
+(613,347,ls),
+(613,336,o),
+(611,332,o),
+(598,332,cs),
+(185,332,ls)
+);
+}
+);
+width = 784;
+}
+);
+metricLeft = "=40";
+metricRight = "=|";
+unicode = 8494;
+},
+{
 glyphname = numero;
 lastChange = "2024-05-29 00:14:48 +0000";
 layers = (
@@ -115986,6 +116055,69 @@ width = 1029;
 unicode = 8240;
 },
 {
+glyphname = lozenge;
+kernLeft = lozenge;
+kernRight = lozenge;
+lastChange = "2024-09-27 14:19:56 +0000";
+layers = (
+{
+layerId = master01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(200,107,l),
+(260,107,l),
+(410,357,l),
+(260,608,l),
+(200,608,l),
+(50,357,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(350,357,l),
+(230,158,l),
+(110,357,l),
+(230,557,l)
+);
+}
+);
+width = 460;
+},
+{
+layerId = master02;
+shapes = (
+{
+closed = 1;
+nodes = (
+(200,108,l),
+(280,108,l),
+(430,357,l),
+(280,609,l),
+(200,609,l),
+(50,357,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(350,357,l),
+(240,174,l),
+(130,357,l),
+(240,542,l)
+);
+}
+);
+width = 480;
+}
+);
+metricLeft = "=50";
+metricRight = "=|";
+unicode = 9674;
+},
+{
 glyphname = dieresiscomb;
 lastChange = "2024-08-30 20:19:57 +0000";
 layers = (
@@ -125418,7 +125550,7 @@ width = 0;
 },
 {
 glyphname = horncomb.case;
-lastChange = "2024-08-30 20:17:10 +0000";
+lastChange = "2024-09-27 14:34:34 +0000";
 layers = (
 {
 anchors = (
@@ -125432,28 +125564,28 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(154,417,o),
-(196,452,o),
-(196,510,cs),
-(196,564,o),
-(165,581,o),
-(145,581,cs),
-(125,581,o),
-(113,576,o),
-(101,560,c),
-(120,548,o),
-(139,531,o),
-(139,502,cs),
-(139,477,o),
-(128,451,o),
-(87,451,cs),
-(52,451,o),
-(34,478,o),
+(147,426,o),
+(189,461,o),
+(189,519,cs),
+(189,573,o),
+(158,590,o),
+(138,590,cs),
+(118,590,o),
+(106,585,o),
+(94,569,c),
+(113,557,o),
+(132,540,o),
+(132,511,cs),
+(132,486,o),
+(121,460,o),
+(80,460,cs),
+(52,460,o),
+(34,474,o),
 (-10,478,c),
 (-4,458,l),
 (35,458,o),
-(60,415,o),
-(108,416,cs)
+(60,424,o),
+(101,425,cs)
 );
 }
 );
@@ -125471,28 +125603,28 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(161,414,o),
-(200,448,o),
-(200,506,cs),
-(200,560,o),
-(178,581,o),
-(148,581,cs),
-(128,581,o),
-(113,573,o),
-(101,557,c),
-(120,545,o),
-(139,528,o),
-(139,499,cs),
-(139,474,o),
-(128,448,o),
-(87,448,cs),
-(54,448,o),
-(28,480,o),
-(-16,480,c),
-(-4,455,l),
-(35,455,o),
-(60,414,o),
-(108,414,cs)
+(141,433,o),
+(189,460,o),
+(189,518,cs),
+(189,572,o),
+(167,593,o),
+(137,593,cs),
+(117,593,o),
+(102,585,o),
+(90,569,c),
+(109,557,o),
+(128,540,o),
+(128,511,cs),
+(128,486,o),
+(117,460,o),
+(76,460,cs),
+(53,460,o),
+(28,470,o),
+(-5,480,c),
+(-4,458,l),
+(5,456,o),
+(60,433,o),
+(88,433,cs)
 );
 }
 );
@@ -127648,7 +127780,7 @@ width = 0;
 },
 {
 glyphname = apostrophemod;
-lastChange = "2024-08-23 07:13:53 +0000";
+lastChange = "2024-09-27 14:17:57 +0000";
 layers = (
 {
 layerId = master01;
@@ -127698,6 +127830,59 @@ width = 100;
 }
 );
 unicode = 700;
+},
+{
+glyphname = commareversedmod;
+lastChange = "2024-09-27 14:18:22 +0000";
+layers = (
+{
+layerId = master01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(45,421,o),
+(59,459,o),
+(96,498,c),
+(96,513,o),
+(84,526,o),
+(71,526,cs),
+(41,526,o),
+(10,460,o),
+(10,419,cs),
+(10,403,o),
+(15,389,o),
+(27,382,c)
+);
+}
+);
+width = 106;
+},
+{
+layerId = master02;
+shapes = (
+{
+closed = 1;
+nodes = (
+(61,437,o),
+(73,466,o),
+(105,502,c),
+(105,519,o),
+(90,535,o),
+(73,535,cs),
+(40,535,o),
+(10,472,o),
+(10,432,cs),
+(10,415,o),
+(19,399,o),
+(37,388,c)
+);
+}
+);
+width = 115;
+}
+);
+unicode = 701;
 },
 {
 color = 9;
@@ -127984,7 +128169,7 @@ unicode = 712;
 },
 {
 glyphname = IJacute;
-lastChange = "2024-05-29 00:14:48 +0000";
+lastChange = "2024-09-27 14:17:05 +0000";
 layers = (
 {
 guides = (
@@ -127995,14 +128180,18 @@ pos = (829,748);
 layerId = master01;
 shapes = (
 {
-ref = IJ;
+ref = I;
 },
 {
-pos = (738,0);
+pos = (249,9);
 ref = acutecomb.case;
 },
 {
-pos = (783,156);
+pos = (459,0);
+ref = J;
+},
+{
+pos = (738,0);
 ref = acutecomb.case;
 }
 );
@@ -128019,14 +128208,18 @@ width = 870;
 layerId = master02;
 shapes = (
 {
-ref = IJ;
+ref = I;
 },
 {
-pos = (802,0);
+pos = (279,9);
 ref = acutecomb.case;
 },
 {
-pos = (847,156);
+pos = (503,0);
+ref = J;
+},
+{
+pos = (802,0);
 ref = acutecomb.case;
 }
 );
