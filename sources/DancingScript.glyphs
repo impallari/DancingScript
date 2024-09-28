@@ -61,15 +61,28 @@ value = 1;
 name = "meta Table";
 value = (
 {
+data = "Latn,";
 tag = dlng;
 },
 {
+data = "Latn,";
 tag = slng;
 }
 );
+},
+{
+name = "Axis Mappings";
+value = {
+wght = {
+400 = 65;
+500 = 70;
+600 = 75;
+700 = 80;
+};
+};
 }
 );
-date = "2024-09-27 14:20:15 +0000";
+date = "2024-09-28 03:59:09 +0000";
 familyName = "Dancing Script";
 featurePrefixes = (
 {
@@ -85,11 +98,6 @@ languagesystem latn CRT;
 languagesystem latn AZE;
 ";
 name = Languagesystems;
-},
-{
-automatic = 1;
-code = "#";
-name = Prefix;
 }
 );
 features = (
@@ -135,13 +143,11 @@ code = "lookup ccmp_DFLT_1 {
 	sub tildecomb macroncomb by tildecomb_macroncomb;
 } ccmp_DFLT_1;
 
-lookup ccmp_soft_dotted {
+lookup ccmp_Other_1 {
 	@CombiningTopAccents = [acutecomb brevecomb breveinvertedcomb caroncomb circumflexcomb commaturnedabovecomb dblgravecomb dieresiscomb dotaccentcomb gravecomb hookabovecomb hungarumlautcomb macroncomb ringcomb tildecomb];
 	lookupflag UseMarkFilteringSet @CombiningTopAccents;
 	sub [i j idotbelow iogonek itildebelow istroke]' @CombiningTopAccents by [idotless jdotless idotless_dotbelowcomb iogonek.dotless itildebelow.dotless istroke.dotless];
-} ccmp_soft_dotted;
-
-
+} ccmp_Other_1;
 
 lookup ccmp_Other_2 {
 	lookupflag 0;
@@ -129495,19 +129501,12 @@ instances = (
 axesValues = (
 65
 );
-instanceInterpolations = {
-master01 = 1;
-};
 name = Regular;
 },
 {
 axesValues = (
 70
 );
-instanceInterpolations = {
-master01 = 0.66667;
-master02 = 0.33333;
-};
 name = Medium;
 weightClass = 500;
 },
@@ -129515,10 +129514,6 @@ weightClass = 500;
 axesValues = (
 75
 );
-instanceInterpolations = {
-master01 = 0.33333;
-master02 = 0.66667;
-};
 name = SemiBold;
 weightClass = 600;
 },
@@ -129526,9 +129521,6 @@ weightClass = 600;
 axesValues = (
 80
 );
-instanceInterpolations = {
-master02 = 1;
-};
 isBold = 1;
 name = Bold;
 weightClass = 700;
@@ -135080,6 +135072,8 @@ value = "Dancing Script is a trademark of Pablo Impallari. www.impallari.com.";
 );
 settings = {
 disablesNiceNames = 1;
+fontType = variable;
+previewRemoveOverlap = 0;
 };
 unitsPerEm = 1000;
 userData = {
