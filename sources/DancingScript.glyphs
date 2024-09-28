@@ -15,7 +15,9 @@ t,
 "/itildebelow.dotless",
 "/istroke.dotless",
 "ʊ",
-"Ɥ"
+"Ɥ",
+"/Eng.loclNSM",
+"J/Eng.loclNSM"
 );
 axes = (
 {
@@ -196,7 +198,6 @@ lookup ccmp_latn_2;
 tag = ccmp;
 },
 {
-automatic = 1;
 code = "script latn;
 language AZE;
 lookup locl_latn_0 {
@@ -232,8 +233,16 @@ lookup locl_latn_2 {
 } locl_latn_2;
 
 script latn;
-language PLK;
+language NSM;
 lookup locl_latn_3 {
+	sub Eng by Eng.loclNSM;
+language SKS;
+	sub Eng by Eng.loclNSM;
+} locl_latn_3;
+
+script latn;
+language PLK;
+lookup locl_latn_4 {
 	sub Cacute by Cacute.loclPLK;
 	sub Nacute by Nacute.loclPLK;
 	sub Oacute by Oacute.loclPLK;
@@ -242,21 +251,21 @@ lookup locl_latn_3 {
 	sub nacute by nacute.loclPLK;
 	sub oacute by oacute.loclPLK;
 	sub sacute by sacute.loclPLK;
-} locl_latn_3;
-
-script latn;
-language CAT;
-lookup locl_latn_4 {
-	sub l periodcentered' l by periodcentered.loclCAT;
-	sub L periodcentered' L by periodcentered.loclCAT.case;
 } locl_latn_4;
 
 script latn;
-language NLD;
+language CAT;
 lookup locl_latn_5 {
+	sub l periodcentered' l by periodcentered.loclCAT;
+	sub L periodcentered' L by periodcentered.loclCAT.case;
+} locl_latn_5;
+
+script latn;
+language NLD;
+lookup locl_latn_6 {
 	sub iacute j' by jacute;
 	sub Iacute J' by Jacute;
-} locl_latn_5;
+} locl_latn_6;
 ";
 tag = locl;
 },
@@ -40131,6 +40140,180 @@ ref = N;
 {
 pos = (317,-29);
 ref = commaaccentcomb.case;
+}
+);
+width = 674;
+}
+);
+},
+{
+glyphname = Eng.loclNSM;
+lastChange = "2024-09-28 04:14:32 +0000";
+layers = (
+{
+anchors = (
+{
+name = bottom;
+pos = (77,-39);
+},
+{
+name = top;
+pos = (461,715);
+}
+);
+layerId = master01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(408,-281,o),
+(469,-201,o),
+(464,-87,c),
+(466,69,o),
+(593,535,o),
+(663,720,c),
+(633,720,o),
+(607,688,o),
+(600,671,cs),
+(584,634,o),
+(467,260,o),
+(439,72,c),
+(429,137,o),
+(410,275,o),
+(395,408,cs),
+(377,569,o),
+(359,720,o),
+(279,720,cs),
+(202,720,o),
+(79,618,o),
+(79,527,cs),
+(79,495,o),
+(95,470,o),
+(139,470,c),
+(136,479,o),
+(134,492,o),
+(134,505,cs),
+(134,570,o),
+(185,683,o),
+(250,683,cs),
+(261,683,o),
+(265,673,o),
+(265,660,cs),
+(265,645,o),
+(260,626,o),
+(258,619,cs),
+(138,211,o),
+(79,40,o),
+(46,-87,c),
+(107,-87,o),
+(134,12,o),
+(295,589,c),
+(313,462,o),
+(366,100,o),
+(386,-6,c),
+(409,-178,o),
+(398,-249,o),
+(312,-249,cs),
+(271,-249,o),
+(249,-214,o),
+(249,-154,cs),
+(249,-129,o),
+(261,-75,o),
+(285,-34,c),
+(275,-29,o),
+(266,-26,o),
+(257,-26,cs),
+(210,-26,o),
+(181,-96,o),
+(181,-154,cs),
+(181,-228,o),
+(242,-281,o),
+(289,-281,cs)
+);
+}
+);
+width = 640;
+},
+{
+anchors = (
+{
+name = bottom;
+pos = (84,-50);
+},
+{
+name = top;
+pos = (489,715);
+}
+);
+layerId = master02;
+shapes = (
+{
+closed = 1;
+nodes = (
+(429,-284,o),
+(513,-197,o),
+(511,-87,cs),
+(511,70,o),
+(637,539,o),
+(707,721,c),
+(663,721,o),
+(638,689,o),
+(626,668,cs),
+(578,585,o),
+(523,306,o),
+(475,114,c),
+(463,177,o),
+(460,193,o),
+(429,407,cs),
+(405,571,o),
+(383,720,o),
+(291,720,cs),
+(214,720,o),
+(84,616,o),
+(84,525,cs),
+(84,488,o),
+(105,460,o),
+(164,460,c),
+(158,474,o),
+(154,491,o),
+(154,507,cs),
+(154,565,o),
+(205,669,o),
+(262,669,cs),
+(273,669,o),
+(275,665,o),
+(275,655,cs),
+(275,639,o),
+(269,620,o),
+(268,616,cs),
+(152,213,o),
+(97,45,o),
+(56,-87,c),
+(132,-87,o),
+(162,8,o),
+(312,555,c),
+(330,457,o),
+(399,66,o),
+(415,-1,cs),
+(450,-149,o),
+(389,-235,o),
+(357,-235,cs),
+(319,-235,o),
+(295,-203,o),
+(295,-149,cs),
+(295,-109,o),
+(307,-80,o),
+(333,-47,c),
+(317,-40,o),
+(304,-36,o),
+(294,-36,cs),
+(240,-36,o),
+(212,-98,o),
+(212,-149,cs),
+(212,-239,o),
+(307,-284,o),
+(353,-284,cs)
+);
 }
 );
 width = 674;
